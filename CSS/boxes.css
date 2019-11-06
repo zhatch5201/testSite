@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+div {
+	float: left;
+}
+
+html {
+	margin: 0px 0px 0px 0px;
+}

@@ -1,0 +1,197 @@
+@charset 'utf-8';
+@import url(/CSS/boxes.css);
+
+div.navBar {
+	width: 60px;
+	min-height: 100%;
+	background-color: #181818;
+	text-align: center;
+}
+div.navBar > nav {
+	display: block;
+	position: absolute;
+	height: 210px;
+	top: 50%;
+	margin-top: -120px;
+	width: 100%;
+}
+div.navBar * * * * {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div.navBar div.container {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+	vertical-align: middle;
+}
+
+a::after {
+	content: "";
+	display: table;
+	clear: both;
+	text-decoration: none;
+}
+
+div.navbar > div.container > ul li a {
+	font-size: 22px;
+	color: black;
+	display: block;
+	line-height: 51px;
+	height: 51px;
+	position: relative;
+	text-decoration: none;
+}
+div.navBar ul {
+	list-style-type: none;
+	width: fit-content;
+	min-height: 100%;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+div.navBar li {
+	width: fit-content;
+	height: fit-content;
+	display: block;
+	min-height: unset;
+}
+
+div.navBar li a {
+	padding-left: 14px;
+	text-decoration: none;
+}
+div.navBar img.navImage {
+	height: 32px;
+	width: 32px;
+}
+
+div.navBar > figure {
+	margin: 10px auto;
+}
+
+div.navBar > figure > img.navImage {
+	width: 32px;
+	height: 32px;
+	margin-left: 15px;
+	margin-right: 20px;
+	margin-bottom: 32px;
+}
+
+/* Images */
+
+div.navBar ul li:nth-of-type(1):hover img,
+div.navBar ul li:nth-of-type(1):hover img:hover {
+	display: none;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(1):hover a::after {
+	content: ""attr(alt)"";
+	padding-left: 1px;
+	font-size: 15px;
+	color: white;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(2):hover img,
+div.navBar ul li:nth-of-type(2):hover img:hover {
+	display: none;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(2):hover a::after {
+	content: ""attr(alt)"";
+	padding-left: 1px;
+	font-size: 15px;
+	color: white;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	transform: translateX(-3px);
+}
+div.navBar ul li:nth-of-type(3):hover img,
+div.navBar ul li:nth-of-type(3):hover img:hover {
+	display: none;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(3):hover a::after {
+	content: ""attr(alt)"";
+	padding-left: 1px;
+	font-size: 15px;
+	color: white;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+div.navBar ul li:nth-of-type(4):hover img,
+div.navBar ul li:nth-of-type(4):hover img:hover {
+	display: none;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(4):hover a::after {
+	content: ""attr(alt)"";
+	padding-left: 1px;
+	font-size: 15px;
+	color: white;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+div.navBar ul li:nth-of-type(5):hover img,
+div.navBar ul li:nth-of-type(5):hover img:hover {
+	display: none;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+}
+
+div.navBar ul li:nth-of-type(5):hover a::after {
+	content: ""attr(alt)"";
+	padding-left: 1px;
+	font-size: 15px;
+	color: white;
+	min-width: 32px;
+	max-width: 32px;
+	min-height: 32px;
+	max-height: 32px;
+	transform: translateX(-8px);
+}
+
+div.navBar > ul > div.container > li:nth-of-type(5) ul.navSubList,
+div.navBar > ul > div.container > li:nth-of-type(5):hover ul.navSubList li {
+	display: none;
+}
+
+div.navBar > ul > li:nth-of-type(5):hover > ul.navSubList {
+	display: unset;
+}
+
+.navImage {
+	filter: invert(0.4) saturate(50);
+}
