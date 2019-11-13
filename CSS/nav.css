@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 @import url(/CSS/boxes.css);
 
 div.navBar {
@@ -72,7 +72,8 @@ div.navBar img.navImage {
 }
 
 div.navBar > figure {
-	margin: 10px auto;
+	margin: 0px auto;
+	transform: translateY(7px);
 }
 
 div.navBar > figure > img.navImage {
@@ -161,6 +162,7 @@ div.navBar ul li:nth-of-type(4):hover a::after {
 	max-width: 32px;
 	min-height: 32px;
 	max-height: 32px;
+	transform: translateX(-6px);
 }
 div.navBar ul li:nth-of-type(5):hover img,
 div.navBar ul li:nth-of-type(5):hover img:hover {
@@ -180,7 +182,7 @@ div.navBar ul li:nth-of-type(5):hover a::after {
 	max-width: 32px;
 	min-height: 32px;
 	max-height: 32px;
-	transform: translateX(-8px);
+	transform: translateX(-11px);
 }
 
 div.navBar > ul > div.container > li:nth-of-type(5) ul.navSubList,
