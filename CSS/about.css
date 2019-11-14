@@ -4,6 +4,12 @@
 	letter-spacing: 14px;
 }
 
+html {
+	min-width: 1920px;
+	min-height: 1080px;
+	max-height: 1080px;
+	max-width: 1920px;
+}
 /* Both sides */
 div.rightMain > div.left,
 div.rightMain > div.right {
