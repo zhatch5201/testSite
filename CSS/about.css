@@ -1,0 +1,88 @@
+@font-face {
+	font-family: Ner;
+	src: url(CSS/Fonts/chemrea.ttf) format("TrueType"), url(Fonts/chemreb.ttf) format("TrueType");
+	letter-spacing: 14px;
+}
+
+/* Both sides */
+div.rightMain > div.left,
+div.rightMain > div.right {
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+
+div.rightMain > div.left ul,
+div.rightMain > div.right ul {
+	line-height: 75px;
+	font-family: Ner, sans-serif;
+}
+
+div.rightMain h1 {
+	font-family: Ner, sans-serif;
+	letter-spacing: 15px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+div.rightMain img.listImage {
+	height: 70px;
+	width: 65px;
+	vertical-align: middle;
+	margin: 20px auto;
+}
+
+/* Left side styles */
+div.rightMain > div.left {
+	width: 60%;
+}
+
+div.rightMain > div.left ul {
+	padding-left: 20px;
+	font-size: 2em;
+}
+
+div.rightMain > div.left > ul li {
+	max-width: 70%;
+	font-size: 1.1em;
+	line-height: 2em;
+}
+
+/* Right side styles */
+div.rightMain > div.right {
+	width: 30%;
+}
+
+div.rightMain > div.right > ul > li {
+	font-size: 2em;
+	font-weight: 400;
+	padding-left: 30px;
+	vertical-align: middle;
+}
+
+div.rightMain > div.right > ul > li:nth-of-type(1) > img {
+	transform: translateY(-8px);
+	padding-right: 15px;
+}
+
+div.rightMain > div.right > ul > li:nth-of-type(2) > img {
+	transform: translateY(-10px);
+	padding-right: 15px;
+}
+
+div.rightMain > div.right > ul > li:nth-of-type(4) > img {
+	transform: translateY(-10px);
+	padding-right: 15px;
+}
+
+div.rightMain > div.right > ul > li:nth-of-type(5) > img {
+	transform: translateY(-5px);
+	padding-right: 15px;
+}
+
+div.rightMain > div.right > ul > li:nth-of-type(6) > img {
+	transform: translateY(-10px);
+	padding-right: 15px;
+	height: 90px;
+}
