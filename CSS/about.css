@@ -32,10 +32,14 @@ div.rightMain h1 {
 	font-family: Ner, sans-serif;
 	letter-spacing: 15px;
 	text-align: center;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
+	padding-bottom: 20px;
 }
 
+div.rightMain div.left h1 {
+	padding-bottom: 75px;
+}
 div.rightMain img.listImage {
 	height: 70px;
 	width: 65px;
@@ -46,6 +50,7 @@ div.rightMain img.listImage {
 /* Left side styles */
 div.rightMain > div.left {
 	width: 60%;
+	height: 100%;
 }
 
 div.rightMain > div.left ul {
@@ -61,7 +66,8 @@ div.rightMain > div.left > ul li {
 
 /* Right side styles */
 div.rightMain > div.right {
-	width: 30%;
+	width: 40%;
+	height: 100%;
 }
 
 div.rightMain > div.right > ul > li {
@@ -95,4 +101,61 @@ div.rightMain > div.right > ul > li:nth-of-type(6) > img {
 	transform: translateY(-10px);
 	padding-right: 15px;
 	height: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-y: hidden;
+	}
+
+	div.rightMain > div.left {
+		display: none;
+	}
+
+	div.rightMain > div.right {
+		width: 100vw;
+		min-width: 100vw;
+		text-align: center;
+	}
+	div.right > ul li:nth-of-type(1) {
+		background-image: url(../HTML/Images/html5.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	div.right > ul li:nth-of-type(2) {
+		background-image: url(../HTML/Images/css3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	div.right > ul li:nth-of-type(3) {
+		background-image: url(../HTML/Images/javascript.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	div.right > ul li:nth-of-type(4) {
+		background-image: url(../HTML/Images/sass.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	div.right > ul li:nth-of-type(5) {
+		background-image: url(../HTML/Images/python.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	div.right > ul li:nth-of-type(6) {
+		background-image: url(../HTML/Images/java.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
 }

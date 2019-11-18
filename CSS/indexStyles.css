@@ -27,7 +27,8 @@ div.rightMain > p#descP {
 	height: fit-content;
 	font-weight: bold;
 	font-size: 4em;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+		sans-serif;
 	top: 30%;
 	left: 20%;
 }
@@ -44,6 +45,9 @@ div.rightMain > p#descP {
 
 	div.rightMain > p#descP {
 		position: absolute;
-		font-size: 2em;
+		transform: translateX(-50px) translateY(-150px);
+		font-size: 2.65em;
+		line-height: 75px;
+		vertical-align: middle;
 	}
 }
