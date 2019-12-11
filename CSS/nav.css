@@ -197,3 +197,129 @@ div.navBar > ul > li:nth-of-type(5):hover > ul.navSubList {
 .navImage {
 	filter: invert(0.4) saturate(50);
 }
+
+/* Multimedia styles */
+@media only screen and (max-width: 600px) {
+	/* Navicon */
+
+	*,
+	*::after,
+	*::before {
+		overflow: visible;
+	}
+	div.navBar {
+		min-height: 60px;
+		min-width: 100%;
+		z-index: 1;
+	}
+
+	div.navBar > figure {
+		position: absolute;
+		top: 7px;
+		left: 15px;
+	}
+
+	div.navBar > nav {
+		height: 60px;
+		width: 50%;
+		left: 25%;
+		top: 60px;
+	}
+
+	div.navBar > nav ul {
+		display: block;
+		position: relative;
+		top: 60px;
+		left: 60px;
+		width: 160px;
+		height: 60px;
+	}
+
+	div.navBar div.container {
+		display: block;
+		position: absolute;
+		left: 60px;
+		width: 160px;
+		height: 60px;
+	}
+
+	div.navBar > nav > ul li {
+		position: absolute;
+		top: 25%;
+	}
+
+	div.navBar > nav ul li:nth-of-type(1) {
+		left: -150px;
+	}
+	div.navBar ul li:nth-of-type(1):hover a::after {
+		content: ""attr(alt)"";
+		padding-left: 1px;
+		font-size: 15px;
+		color: white;
+		min-width: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		max-height: 32px;
+		transform: translateX(-11px) translateY(10px);
+	}
+
+	div.navBar ul li:nth-of-type(2) {
+		left: -95px;
+	}
+	div.navBar ul li:nth-of-type(2):hover a::after {
+		content: ""attr(alt)"";
+		padding-left: 1px;
+		font-size: 15px;
+		color: white;
+		min-width: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		max-height: 32px;
+		transform: translateX(-11px) translateY(10px);
+	}
+
+	div.navBar ul li:nth-of-type(3) {
+		left: -40px;
+	}
+	div.navBar ul li:nth-of-type(3):hover a::after {
+		content: ""attr(alt)"";
+		padding-left: 1px;
+		font-size: 15px;
+		color: white;
+		min-width: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		max-height: 32px;
+		transform: translateX(-11px) translateY(10px);
+	}
+
+	div.navBar ul li:nth-of-type(4) {
+		left: 15px;
+	}
+	div.navBar ul li:nth-of-type(4):hover a::after {
+		content: ""attr(alt)"";
+		padding-left: 1px;
+		font-size: 15px;
+		color: white;
+		min-width: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		max-height: 32px;
+		transform: translateX(-11px) translateY(10px);
+	}
+
+	div.navBar ul li:nth-of-type(5) {
+		left: 75px;
+	}
+	div.navBar ul li:nth-of-type(5):hover a::after {
+		content: ""attr(alt)"";
+		padding-left: 1px;
+		font-size: 15px;
+		color: white;
+		min-width: 32px;
+		max-width: 32px;
+		min-height: 32px;
+		max-height: 32px;
+		transform: translateX(-11px) translateY(10px);
+	}
+}

@@ -1,28 +1,30 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152521620-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152521620-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-152521620-1');
-</script>
+    gtag('config', 'UA-152521620-1');
+  </script>
+  <script type="text/javascript" src="../JavaScript/jquery.js"></script>
   <link rel="stylesheet" href="../CSS/reset.css" />
   <link rel="stylesheet" href="../CSS/nav.css" />
   <link rel="stylesheet" href="../CSS/contact.css" />
-  <link rel="stylesheet" href="../CSS/indexStyles.css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="navBar">
     <figure>
       <a href="../index.html"><img class="navImage" src="Images/zIcon.svg" alt="" /></a>
-    </figure> 
+    </figure>
     <nav>
       <ul>
         <div class="container">
@@ -30,58 +32,74 @@
             <a href="../index.html" alt="Home">
               <img class="navImage" src="Images/homeIcon.png" alt="Home">
             </a>
-        </li>
-        <li>
-          <a href="about.html" alt="About">
-            <img class="navImage" src="Images/personIcon.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="skills.html" alt="Skills">
-            <img class="navImage" src="Images/skillsicon.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="myWork.html" alt="Projects">
-            <img class="navImage" src="Images/workIcon.svg" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="contact.html" alt="Inquiries">
-            <img class="navImage" src="Images/mailIcon.svg" alt="">
-            <!-- <ul id="navSubList">
+          </li>
+          <li>
+            <a href="about.html" alt="About">
+              <img class="navImage" src="Images/personIcon.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="skills.html" alt="Skills">
+              <img class="navImage" src="Images/skillsicon.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="myWork.html" alt="Projects">
+              <img class="navImage" src="Images/workIcon.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" alt="Inquiries">
+              <img class="navImage" src="Images/mailIcon.svg" alt="">
+              <!-- <ul id="navSubList">
               <li><a href="#"><img src="" alt="Discord"></a></li>
               <li><a href="#"><img src="" alt="Facebook"></a></li>
               <li><a href="#"><img src="" alt="Email"></a></li>
             </ul> -->
-          </a>
-        </li>
-      </div>
-    </ul>
-  </nav>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </nav>
   </div>
 
 
   <!--  -->
   <div class="rightMain">
     <p id="descP">
-      <i>
-        Feel free to contact me at anytime, no matter the business hours.
-      </i>
+      <i id="sForm">Contact me</i> anytime<br /> no matter the business hours
     </p>
-    <div class="mailContainer">
-      <form id="mailForm" action="mailto:zackeryhatch2015@gmail.com" method="post" enctype="text/plain">
-        Name:<br>
-        <input class="mailWork" type="text" name="name"><br>
-        E-mail:<br>
-        <input class="mailWork" type="text" name="mail"><br>
-        Email Body:<br>
-        <input class="mailWork" type="text" name="comment" size="unset"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-          </form>
-      </div>
-    
+    <form autocomplete="off" id="contactContainer" method="POST" action>
+      <input placeholder="Your Name:" id="sName" name="senderName" type="text" required /><br />
+      <input placeholder="Your Email:" id="sEmail" name="senderEmail" type="text" required /><br />
+      <textarea placeholder="Email Body" name="emailBody" id="mailBody" cols="20" rows="5"></textarea><br /><br />
+      <textarea name="hiddenHolder" class="hidden"></textarea>
+      <button id="submit" type="submit">Send</button>
+    </form>
   </div>
+  <script src="../JavaScript/jquery-3.4.1.js">
+  </script>
+  <script>
+    $(function () {
+      $('#sForm').on('click', function () {
+        $('#contactContainer').slideDown(1000);
+      });
+      // Submit 'data fields to email function'
+      $('#submit').on('click', function () {
+        const senderName = $('#sName').val();
+        const senderEmail = $('#sEmail').val();
+        const emailBody = $('#mailBody').val();
+        // Find the element names
+        const firstName = $('#sName').attr('name') + " : \n";
+        const emailName = $('#sName').attr('name') + " : \n";
+        const mailMsg = $('#sName').attr('name');
+        // Write the new message
+        const newMsg = firstName.concat(sendername).concat(emailName).concat(senderEmail).concat(mailMsg).concat(emailBody);
+        alert(newMsg);
+      });
+    });
+  </script>
+
 </body>
+
 </html>

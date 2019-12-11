@@ -21,6 +21,7 @@ div.rightMain {
 	);
 	background-repeat: no-repeat;
 }
+
 div.rightMain > p#descP {
 	position: absolute;
 	width: fit-content;
@@ -31,6 +32,8 @@ div.rightMain > p#descP {
 		sans-serif;
 	top: 30%;
 	left: 20%;
+	color: aquamarine;
+	text-shadow: #000000 2px 2px 15px;
 }
 
 @media only screen and (max-width: 600px) {
