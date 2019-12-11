@@ -69,10 +69,10 @@
     <p id="descP">
       <i id="sForm">Contact me</i> anytime<br /> no matter the business hours
     </p>
-    <form autocomplete="off" id="contactContainer" method="POST" action>
-      <input placeholder="Your Name:" id="sName" name="senderName" type="text" required /><br />
-      <input placeholder="Your Email:" id="sEmail" name="senderEmail" type="text" required /><br />
-      <textarea placeholder="Email Body" name="emailBody" id="mailBody" cols="20" rows="5"></textarea><br /><br />
+    <form autocomplete="off" id="contactContainer" method="POST" action="mailto:zackeryhatch2015@gmail.com">
+      <input placeholder="Your Name:" id="sName" name="senderName" type="text" required /><br />&nbsp;
+      <input placeholder="Your Email:" id="sEmail" name="senderEmail" type="mail" required /><br />&nbsp;
+      <textarea placeholder="Email Body" name="emailBody" id="mailBody" cols="0" rows="0"></textarea><br /><br />
       <textarea name="hiddenHolder" class="hidden"></textarea>
       <button id="submit" type="submit">Send</button>
     </form>
@@ -82,7 +82,7 @@
   <script>
     $(function () {
       $('#sForm').on('click', function () {
-        $('#contactContainer').slideDown(1000);
+        $('#contactContainer').slideToggle(1000);
       });
       // Submit 'data fields to email function'
       $('#submit').on('click', function () {
